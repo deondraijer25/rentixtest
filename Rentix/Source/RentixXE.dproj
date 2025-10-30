@@ -1,0 +1,269 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{F11E33FE-AA0E-4917-9E3C-CB324AC4A59D}</ProjectGuid>
+			<MainSource>RentixXE.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<ProjectVersion>13.4</ProjectVersion>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+			<Cfg_1_Win32>true</Cfg_1_Win32>
+			<CfgParent>Cfg_1</CfgParent>
+			<Cfg_1>true</Cfg_1>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitSearchPath>C:\Users\wilco\projects\Finix\D7Extensions\FastMM4;C:\Users\wilco\projects\Finix\3rd Party\DIMIME;C:\Users\wilco\projects\Finix\3rd Party\WindowsTaskbar;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+			<DCC_PentiumSafeDivide>true</DCC_PentiumSafeDivide>
+			<DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
+			<DCC_UsePackage>vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;teeui;teedb;tee;dss;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;Rave50CLX;Rave50VCL;dclOfficeXP;visualclx;visualdbclx;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<DCC_K>false</DCC_K>
+			<DCC_Define>IS_RENTIXCLIENT;aALLEENGOUDSEPRODUCTEN;IS_DBTOOL;NO_FRAMEWORK;$(DCC_Define)</DCC_Define>
+			<VerInfo_Release>1</VerInfo_Release>
+			<DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+			<DCC_S>false</DCC_S>
+			<DCC_N>true</DCC_N>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_E>false</DCC_E>
+			<DCC_DcuOutput>..\DCU</DCC_DcuOutput>
+			<Icon_MainIcon>Procent-teken-64.ico</Icon_MainIcon>
+			<VerInfo_Locale>1043</VerInfo_Locale>
+			<DCC_ExeOutput>..\..\Hypotheken\Output\exe</DCC_ExeOutput>
+			<DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;Xml.Win;System.Win;$(DCC_Namespace)</DCC_Namespace>
+			<DCC_UNIT_PLATFORM>false</DCC_UNIT_PLATFORM>
+			<DCC_F>false</DCC_F>
+			<VerInfo_Keys>CompanyName=Euroface Financial Services BV;FileDescription=Rentix - rente update service;FileVersion=5.0.1.0;InternalName=Rentix.exe;LegalCopyright=(c) 2003-2012 Euroface Financial Services BV;LegalTrademarks=;OriginalFilename=;ProductName=Rentix;ProductVersion=5.0.1.0;Comments=;Last Compile=2012-07-16 10:26</VerInfo_Keys>
+			<VerInfo_MajorVer>5</VerInfo_MajorVer>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<VerInfo_IncludeVerInfo>false</VerInfo_IncludeVerInfo>
+			<Debugger_RunParams>/auto /admin</Debugger_RunParams>
+			<DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;Last Compile=2012-07-16 10:26</VerInfo_Keys>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<VerInfo_IncludeVerInfo>false</VerInfo_IncludeVerInfo>
+			<DCC_PentiumSafeDivide>false</DCC_PentiumSafeDivide>
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_ImportedDataReferences>false</DCC_ImportedDataReferences>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+			<DCC_Define>aNO_LICENTIE;IS_WEBSERVICE;$(DCC_Define)</DCC_Define>
+			<BRCC_Defines>NO_LICENTIE;$(BRCC_Defines)</BRCC_Defines>
+			<DCC_DebugInformation>true</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>true</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+			<DCC_AssertionsAtRuntime>true</DCC_AssertionsAtRuntime>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=5.0.1.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;Last Compile=2012-07-16 10:26</VerInfo_Keys>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<VerInfo_IncludeVerInfo>false</VerInfo_IncludeVerInfo>
+			<DCC_DebugDCUs>true</DCC_DebugDCUs>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+			<DCC_AssertionsAtRuntime>true</DCC_AssertionsAtRuntime>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_PentiumSafeDivide>false</DCC_PentiumSafeDivide>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<DCC_DcuOutput>..\DCU</DCC_DcuOutput>
+			<DCC_DebugInfoInTds>true</DCC_DebugInfoInTds>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=5.0.1.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;Last Compile=2012-07-16 10:26</VerInfo_Keys>
+			<Debugger_RunParams>/adminauto /stil</Debugger_RunParams>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\..\D7Extensions\FastMM4\FastMM4.pas"/>
+			<DCCReference Include="User Interface\FormMainClient.pas">
+				<Form>frmMainformClient</Form>
+			</DCCReference>
+			<DCCReference Include="Objecten\XMLimport.pas"/>
+			<DCCReference Include="Objecten\RVP.pas"/>
+			<DCCReference Include="Database\PlafondBasis.pas"/>
+			<DCCReference Include="Database\RenteBasis.pas"/>
+			<DCCReference Include="General\ADODB_TLB.pas"/>
+			<DCCReference Include="General\Opties.pas"/>
+			<DCCReference Include="..\..\Blackbox\source\BlackBoxEnums.pas"/>
+			<DCCReference Include="General\RentixTools.pas"/>
+			<DCCReference Include="User Interface\FormOpties.pas">
+				<Form>FrmOpties</Form>
+			</DCCReference>
+			<DCCReference Include="General\InternetWrap.pas"/>
+			<DCCReference Include="General\InternetLimitedWaitThread.pas"/>
+			<DCCReference Include="Client\ClientRunMode.pas"/>
+			<DCCReference Include="Objecten\RentixXMLconstanten.pas"/>
+			<DCCReference Include="Database\RenteUpdate.pas"/>
+			<DCCReference Include="Client\ClientVariabelen.pas"/>
+			<DCCReference Include="Client\FormLicentieActivatie.pas">
+				<Form>frmLicentieActivering</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Blackbox\source\BlackboxUtilities.pas"/>
+			<DCCReference Include="..\..\Blackbox\source\BBsetup.pas"/>
+			<DCCReference Include="Client\formDialogRenteUpdate.pas">
+				<Form>frmDialogRenteUpdate</Form>
+			</DCCReference>
+			<DCCReference Include="General\RentixLicentieConst.pas"/>
+			<DCCReference Include="General\FrameLabelPicture.pas">
+				<Form>Frame1</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="User Interface\FormMeldingen.pas">
+				<Form>frmMeldingen</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\HYPOTHEKEN\Source\Enumeraties\ModuleLijstEnum.pas"/>
+			<DCCReference Include="..\..\FINANCIELE PLANNING\Source\Framework\Model\EnumerationFramework.pas"/>
+			<DCCReference Include="..\..\FINANCIELE PLANNING\Source\Data Model\Enumerations.pas"/>
+			<DCCReference Include="..\..\HYPOTHEKEN\Source\User Interface\Controllers\DatabaseConnectie.pas"/>
+			<DCCReference Include="WebserviceExe\RentixIntf.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\User Interface\Controllers\ProxySupport.pas"/>
+			<DCCReference Include="..\..\Financiele Planning\Source\User Interface\Controllers\EnvironmentInstellingen.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\decrypt\source\DeEnCode.pas"/>
+			<DCCReference Include="..\..\Financiele Planning\Source\General\FileVersion.pas"/>
+			<DCCReference Include="..\..\3rd Party\QuickRTTI\MiddleXRTTI.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\StrMisc.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\CalcMisc.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\ObjArray.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\ObjBase.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\ObjMisc.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\GlobalObjectManager.pas"/>
+			<DCCReference Include="..\..\FINANCIELE PLANNING\Source\General\DebugMisc.pas"/>
+			<DCCReference Include="..\..\3rd Party\QuickRTTI\QuickRTTI.pas"/>
+			<DCCReference Include="..\..\3rd Party\QuickRTTI\middlex.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\General\EfsDialogs.pas"/>
+			<DCCReference Include="..\..\FinixLicentieActivatie\InternetDownloadHandler.pas"/>
+			<DCCReference Include="..\..\FinixLicentieActivatie\InternetDownloader.pas"/>
+			<DCCReference Include="..\..\FinixLicentieActivatie\DialogMultiDownloadVoortgang.pas">
+				<Form>frmMultiDownloadVoortgang</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\FinixLicentieActivatie\DialogDownloadVoortgang.pas">
+				<Form>frmDownloadVoortgang</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Hypotheken\Source\General\MacAdres.pas"/>
+			<DCCReference Include="..\..\Blackbox\source\BlackBoxDatabaseController.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\User Interface\Controllers\HarddiskSerial.pas"/>
+			<DCCReference Include="..\..\FinixWebservice\LicentieValidatieMelding.pas"/>
+			<DCCReference Include="..\..\Blackbox\source\DatabaseConstanten.pas"/>
+			<DCCReference Include="..\..\Financiele Planning\Source\General\u_Utility.pas"/>
+			<DCCReference Include="..\..\FinixInstaller\Source\Units\u_SysFolders.pas"/>
+			<DCCReference Include="..\..\FinixWebservice\FinixWebserviceIntf.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\General\TimeManager.pas"/>
+			<DCCReference Include="..\..\Hypotheken\Source\General\FinixShowMessage.pas">
+				<Form>formFinixDialogbox</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\HYPOTHEKEN\Source\User Interface\Controllers\u_QueryCache.pas"/>
+			<DCCReference Include="..\..\FINANCIELE PLANNING\Source\General\Win32Misc.pas"/>
+			<DCCReference Include="..\..\Financiele planning\Source\General\DateMisc.pas"/>
+			<DCCReference Include="..\..\HYPOTHEKEN\Source\General\SystemTools.pas"/>
+			<DCCReference Include="..\..\HYPOTHEKEN\Source\User Interface\Controllers\FinixLicentieCheck.pas"/>
+			<DCCReference Include="Database\ClientDatabaseConnectie.pas"/>
+			<None Include="Profiling\AQtimeModule1.aqt"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">RentixXE.dpr</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">4</VersionInfo>
+						<VersionInfo Name="MinorVer">1</VersionInfo>
+						<VersionInfo Name="Release">6</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1043</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Euroface Financial Services BV</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Rentix - rente update service</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">4.1.6.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">Rentix.exe</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">(c) 2003-2009 Euroface Financial Services BV</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Rentix</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">4.1.x</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">Created by Euroface Financial Services</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclIPIndyImpl160.bpl">IP Abstraction Indy Implementation Design Time</Excluded_Packages>
+						<Excluded_Packages Name="C:\Program Files (x86)\FastReports\LibD16\dclfrxDB16.bpl">FastReport 4.0 DB Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>
